@@ -12,5 +12,9 @@ if [[ "$1" == "--logs" || "$1" == "-l" ]]; then
         echo "Nazwa skryptu: $0" >> "$filename"
         echo "Data utworzenia: $(date)" >> "$filename"
     done
+elif [[ "$1" == "--date" || "$1" == "-d" ]]; then
+    echo "Dzisiejsza data: $(date)"
+
 fi
+
 
